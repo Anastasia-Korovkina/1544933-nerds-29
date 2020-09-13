@@ -1,0 +1,51 @@
+/* Общие свойства
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif; 
+    color: #000000; 
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+li {
+    list-style: none;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 140px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.menu__list-inner {
+    display: flex;
+}
+.menu__list-link{
+    padding: 0px 22px;
+}
+.menu__list-card{
+    padding-left: 40px;
+    position: relative;
+}
+.menu__list-card::before {
+    content: " ";
+    position: absolute;
+    background-image: url(../img/header-cart.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    left: 0;
+} 
+*/
