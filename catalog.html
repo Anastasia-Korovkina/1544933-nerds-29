@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Каталог — HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo-link">
+                    <img class="header__logo-img" src="https://via.placeholder.com/150x100"
+                        alt="Логотип дизайн-студии Nerd's">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="">
+                                Студия
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="">
+                                Клиенты
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Магазин
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__btn" href="">Корзина</a>
+            </div>
+            <h1 class="header__title">
+                Магазин готовых шаблонов
+            </h1>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Недоделанная разметка форм -->
+        <!-- <aside class="sidebar">
+            <div class="container">
+                <form class="sidebar__form">
+                    <p class="sidebar__title">Стоимость:</p>
+                    <input type="range" min="0" max="15000">
+
+                    <p class="sidebar__title">Сетка:</p>
+                    <label>
+                        <input type="radio" name="layout" value="fluid" checked>
+                        Адаптивная<br />
+                        <input type="radio" name="layout" value="fixed">
+                        Фиксированная<br />
+                        <input type="radio" name="layout" value="elastic">
+                        Резиновая<br />
+                    </label>
+
+                    <p class="sidebar__title">Особенности:</p>
+                    <label>
+                        <input type="checkbox" name="slider" checked>
+                        Слайдер<br />
+                        <input type="checkbox" name="advantages">
+                        Блок преимуществ<br />
+                        <input type="checkbox" name="news" checked>
+                        Новости<br />
+                        <input type="checkbox" name="gallery">
+                        Галерея<br />
+                        <input type="checkbox" name="cart">
+                        Корзина<br />
+                    </label>
+                    <input type="submit" value="Показать">
+                </form>
+            </div>
+        </aside> -->
+
+        <section class="gallery">
+            <div class="container">
+                <h2 class="gallery__title" hidden>Галлерея</h2>
+                <div class="gallery__content">
+                    <!-- Как сделать сортировку? JS? -->
+                    <div class="gallery__content-head">
+                        <div class="gallery__content-text">
+                            Сортировать:
+                        </div>
+                        <div class="gallery__links">
+                            <a class="gallery__link" href="">
+                                По цене
+                            </a>
+                            <a class="gallery__link" href="">
+                                По типу
+                            </a>
+                            <a class="gallery__link" href="">
+                                По названию
+                            </a>
+                        </div>
+                        <!-- Как лучше застилизовать кнопки? Использовать css или вставить svg-картинку? -->
+                        <button class="gallery__control control-down">Down</button>
+                        <button class="gallery__control control-up">Up</button>
+                    </div>
+                    <div class="gallery__items">
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="">
+                                <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="Шаблон">
+                            </a>
+                            <div class="gallery__item-content">
+                                <div class="gallery__item-title">Sedona</div>
+                                <div class="gallery__item-text">Информационный сайт для туристов</div>
+                                <a class="gallery__item-btn" href="">9 900</a>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="">
+                                <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="Шаблон">
+                            </a>
+                            <div class="gallery__item-content">
+                                <div class="gallery__item-title">Pink App</div>
+                                <div class="gallery__item-text">Продуктовый лендинг приложения для iOS и Android copy</div>
+                                <a class="gallery__item-btn" href="">9 900</a>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="">
+                                <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="Шаблон">
+                            </a>
+                            <div class="gallery__item-content">
+                                <div class="gallery__item-title">Barbershop</div>
+                                <div class="gallery__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <a class="gallery__item-btn" href="">9 900</a>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="">
+                                <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="Шаблон">
+                            </a>
+                            <div class="gallery__item-content">
+                                <div class="gallery__item-title">Mishka</div>
+                                <div class="gallery__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <a class="gallery__item-btn" href="">9 900</a>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="">
+                                <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="Шаблон">
+                            </a>
+                            <div class="gallery__item-content">
+                                <div class="gallery__item-title">A Plus</div>
+                                <div class="gallery__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <a class="gallery__item-btn" href="">9 900</a>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="">
+                                <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="Шаблон">
+                            </a>
+                            <div class="gallery__item-content">
+                                <div class="gallery__item-title">Kvas</div>
+                                <div class="gallery__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <a class="gallery__item-btn" href="">9 900</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="gallery__btn">1</button>
+                    <button class="gallery__btn">2</button>
+                    <button class="gallery__btn">3</button>
+                    <button class="gallery__btn">Следующая</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__info">
+            <h2 class="footer__info-title" hidden>Контактная информация</h2>
+            <div class="container">
+                <div class="footer__contacts">
+                    <p class="footer__contacts-title">
+                        NЁRDS DESIGN STUDIO
+                    </p>
+                    <p class="footer__contacts-text">
+                        191186, Санкт-Петербург,<br />
+                        ул. Б. Конюшенная, д. 19/8<br />
+                        <br />
+                        тел. <a class="footer__phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+                    </p>
+                </div>
+            </div>
+            <!-- Карту добавить через iframe? -->
+            <div class="footer__map"></div>
+        </section>
+        <section class="footer__social">
+            <div class="container">
+                <h2 class="footer__social-title" hidden>Социальные сети</h2>
+                <div class="footer__social-inner">
+                    <div class="footer__social-icons">
+                        <a class="footer__social-link" href="#">
+                            <img class="social-img" src="https://via.placeholder.com/150x100" alt="Иконка">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img class="social-img" src="https://via.placeholder.com/150x100" alt="Иконка">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img class="social-img" src="https://via.placeholder.com/150x100" alt="Иконка">
+                        </a>
+                    </div>
+                    <div class="footer__social-content">
+                        <p class="footer__social-text">
+                            Давайте дружить, это выгодно!
+                        </p>
+                        <p class="footer__social-desc">
+                            Скидка 10% для друзей из социальных сетей.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
