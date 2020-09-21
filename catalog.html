@@ -10,41 +10,43 @@
 
 <body>
   <header class="main-header">
-    <div class="main-wrapper">
-      <a class="header__logo-link" href="#">
-        <img class="header__logo-img" src="https://via.placeholder.com/150x100" alt="Логотип дизайн-студии Nerd's">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__site-list">
-          <li class="main-nav__site-item">
-            <a class="main-nav__site-link" href="index.html">
-              Студия
-            </a>
-          </li>
-          <li class="main-nav__site-item">
-            <a class="main-nav__site-link" href="blank.html">
-              Клиенты
-            </a>
-          </li>
-          <li class="main-nav__site-item">
-            <a class="main-nav__site-link" href="catalog.html">
-              Магазин
-            </a>
-          </li>
-          <li class="main-nav__site-item">
-            <a class="main-nav__site-link" href="blank.html">
-              Контакты
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__user-list">
-          <li class="main-nav__user-item">
-            <a class="main-nav__user-link" href="blank.html">
-              Корзина
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="wrapper">
+      <div class="header__inner">
+        <a class="header__logo-link" href="#">
+          <img class="header__logo-img" src="https://via.placeholder.com/150x100" alt="Логотип дизайн-студии Nerd's">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__site-list">
+            <li class="main-nav__site-item">
+              <a class="main-nav__site-link" href="">
+                Студия
+              </a>
+            </li>
+            <li class="main-nav__site-item">
+              <a class="main-nav__site-link" href="blank.html">
+                Клиенты
+              </a>
+            </li>
+            <li class="main-nav__site-item">
+              <a class="main-nav__site-link" href="catalog.html">
+                Магазин
+              </a>
+            </li>
+            <li class="main-nav__site-item">
+              <a class="main-nav__site-link" href="blank.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-list">
+            <li class="main-nav__user-item">
+              <a class="main-nav__user-link" href="blank.html">
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="page-catalog container">
@@ -118,65 +120,77 @@
           <h2 class="visually-hidden">Список шаблонов</h2>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="">
-              <div class="gallery__item-content" hidden>
-                <a class="gallery__item-link" href="">
-                  <h3 class="gallery__item-title">Sedona</h3>
-                </a>
-                <p class="gallery__item-intro">Информационный сайт для туристов</p>
-                <a class="gallery__item-price" href="">9 900</a>
-              </div>
+              <article class="gallery__article">
+                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
+                <div class="gallery__article-content" hidden>
+                  <a class="gallery__article-link" href="">
+                    <h3 class="gallery__article-title">Sedona</h3>
+                  </a>
+                  <p class="gallery__article-intro">Информационный сайт для туристов</p>
+                  <a class="gallery__article-price" href="">9 900</a>
+                </div>
+              </article>
             </li>
             <li class="gallery__item">
-              <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="">
-              <div class="gallery__item-content" hidden>
-                <a class="gallery__item-link" href="">
-                  <h3 class="gallery__item-title">Pink App</h3>
-                </a>
-                <p class="gallery__item-intro">Продуктовый лендинг приложения для iOS и Android
-                </p>
-                <a class="gallery__item-price" href="">9 900</a>
-              </div>
+              <article class="gallery__article">
+                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
+                <div class="gallery__article-content" hidden>
+                  <a class="gallery__article-link" href="">
+                    <h3 class="gallery__article-title">Pink App</h3>
+                  </a>
+                  <p class="gallery__article-intro">Продуктовый лендинг приложения для iOS и Android
+                  </p>
+                  <a class="gallery__article-price" href="">9 900</a>
+                </div>
+              </article>
             </li>
             <li class="gallery__item">
-              <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="">
-              <div class="gallery__item-content" hidden>
-                <a class="gallery__item-link" href="">
-                  <h3 class="gallery__item-title">Barbershop</h3>
-                </a>
-                <p class="gallery__item-intro">Сайт салона красоты. Для мужчин, да.</p>
-                <a class="gallery__item-price" href="">9 900</a>
-              </div>
+              <article class="gallery__article">
+                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
+                <div class="gallery__article-content" hidden>
+                  <a class="gallery__article-link" href="">
+                    <h3 class="gallery__article-title">Barbershop</h3>
+                  </a>
+                  <p class="gallery__article-intro">Сайт салона красоты. Для мужчин, да.</p>
+                  <a class="gallery__article-price" href="">9 900</a>
+                </div>
+              </article>
             </li>
             <li class="gallery__item">
-              <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="">
-              <div class="gallery__item-content" hidden>
-                <a class="gallery__item-link" href="">
-                  <h3 class="gallery__item-title">Mishka</h3>
-                </a>
-                <p class="gallery__item-intro">Интернет-магазин вязаных игрушек</p>
-                <a class="gallery__item-price" href="">9 900</a>
-              </div>
+              <article class="gallery__article">
+                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
+                <div class="gallery__article-content" hidden>
+                  <a class="gallery__article-link" href="">
+                    <h3 class="gallery__article-title">Mishka</h3>
+                  </a>
+                  <p class="gallery__article-intro">Интернет-магазин вязаных игрушек</p>
+                  <a class="gallery__article-price" href="">9 900</a>
+                </div>
+              </article>
             </li>
             <li class="gallery__item">
-              <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="">
-              <div class="gallery__item-content" hidden>
-                <a class="gallery__item-link" href="">
-                  <h3 class="gallery__item-title">A Plus</h3>
-                </a>
-                <p class="gallery__item-intro">Лендинг курсов повышения квалификации</p>
-                <a class="gallery__item-price" href="">9 900</a>
-              </div>
+              <article class="gallery__article">
+                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
+                <div class="gallery__article-content" hidden>
+                  <a class="gallery__article-link" href="">
+                    <h3 class="gallery__article-title">A Plus</h3>
+                  </a>
+                  <p class="gallery__article-intro">Лендинг курсов повышения квалификации</p>
+                  <a class="gallery__article-price" href="">9 900</a>
+                </div>
+              </article>
             </li>
             <li class="gallery__item">
-              <img class="gallery__item-img" src="https://via.placeholder.com/150x100" alt="">
-              <div class="gallery__item-content" hidden>
-                <a class="gallery__item-link" href="">
-                  <h3 class="gallery__item-title">Кваст</h3>
-                </a>
-                <p class="gallery__item-intro">Промо-сайт производителя крафтового кваса</p>
-                <a class="gallery__item-price" href="">9 900</a>
-              </div>
+              <article class="gallery__article">
+                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
+                <div class="gallery__article-content" hidden>
+                  <a class="gallery__article-link" href="">
+                    <h3 class="gallery__article-title">Кваст</h3>
+                  </a>
+                  <p class="gallery__article-intro">Промо-сайт производителя крафтового кваса</p>
+                  <a class="gallery__article-price" href="">9 900</a>
+                </div>
+              </article>
             </li>
           </ul>
         </section>
@@ -197,7 +211,7 @@
       </div>
     </div>
     <section class="contacts">
-      <div class="main-wrapper">
+      <div class="wrapper">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__content">
           <p class="contacts__title">
@@ -218,7 +232,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-wrapper">
+    <div class="wrapper">
       <div class="footer__social">
         <a class="footer__social-link" href="#">
           <img class="footer__social-icons" src="https://via.placeholder.com/150x100" alt="Иконка Вконтакте">
