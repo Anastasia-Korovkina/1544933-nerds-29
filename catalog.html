@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Каталог — HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,12 +14,12 @@
     <div class="wrapper">
       <div class="header__inner">
         <a class="header__logo-link" href="#">
-          <img class="header__logo-img" src="https://via.placeholder.com/150x100" alt="Логотип дизайн-студии Nerd's">
+          <img class="header__logo-img" src="img/logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerd's">
         </a>
         <nav class="main-nav">
           <ul class="main-nav__site-list">
             <li class="main-nav__site-item">
-              <a class="main-nav__site-link" href="">
+              <a class="main-nav__site-link" href="index.html">
                 Студия
               </a>
             </li>
@@ -28,7 +29,7 @@
               </a>
             </li>
             <li class="main-nav__site-item">
-              <a class="main-nav__site-link" href="catalog.html">
+              <a class="main-nav__site-link site-link--active" href="catalog.html">
                 Магазин
               </a>
             </li>
@@ -50,10 +51,14 @@
     </div>
   </header>
   <main class="page-catalog container">
-    <h1 class="page__title">
-      <span class="visually-hidden">Каталог дизайн-студии Nerds</span>
-      Магазин готовых шаблонов
-    </h1>
+    <div class="page__header">
+      <div class="wrapper">
+        <h1 class="page__title">
+          <span class="visually-hidden">Каталог дизайн-студии Nerds</span>
+          Магазин готовых шаблонов
+        </h1>
+      </div>
+    </div>
     <!-- Недоделанная форма фильтра шаблонов в каталоге -->
     <div class="wrapper">
       <div class="column-left">
@@ -84,7 +89,7 @@
             <input type="checkbox" name="cart">
             Корзина<br />
           </fieldset>
-          <input type="submit" value="Показать">
+          <button class="filter-show__btn" type="submit">Показать</button>
         </form>
       </div>
       <div class="column-right">
@@ -92,7 +97,7 @@
           <p class="filter-sort__legend">Сортировать:</p>
           <ul class="filter-sort__list">
             <li class="filter-sort__item">
-              <a class="filter-sort__link" href="">
+              <a class="filter-sort__link sort--active" href="">
                 По цене
               </a>
             </li>
@@ -109,10 +114,10 @@
           </ul>
           <ul class="filter-sort__controls">
             <li class="filter-sort__control">
-              <a class="filter-sort__link control-down">Down</a>
+              <a class="filter-sort__link control-down control--active" href=""></a>
             </li>
             <li class="filter-sort__control">
-              <a class="gallery__link control-up">Up</a>
+              <a class="gallery__link control-up" href=""></a>
             </li>
           </ul>
         </div>
@@ -120,21 +125,21 @@
           <h2 class="visually-hidden">Список шаблонов</h2>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <article class="gallery__article">
-                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
-                <div class="gallery__article-content" hidden>
+              <div class="gallery__article">
+                <img class="gallery__article-img" src="img/catalog-sedona.jpg" width="358px" height="578px" alt="">
+                <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">Sedona</h3>
                   </a>
                   <p class="gallery__article-intro">Информационный сайт для туристов</p>
                   <a class="gallery__article-price" href="">9 900</a>
                 </div>
-              </article>
+              </div>
             </li>
             <li class="gallery__item">
-              <article class="gallery__article">
-                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
-                <div class="gallery__article-content" hidden>
+              <div class="gallery__article">
+                <img class="gallery__article-img" src="img/catalog-pink.jpg" width="358px" height="578px" alt="">
+                <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">Pink App</h3>
                   </a>
@@ -142,61 +147,61 @@
                   </p>
                   <a class="gallery__article-price" href="">9 900</a>
                 </div>
-              </article>
+              </div>
             </li>
             <li class="gallery__item">
-              <article class="gallery__article">
-                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
-                <div class="gallery__article-content" hidden>
+              <div class="gallery__article">
+                <img class="gallery__article-img" src="img/catalog-barbershop.jpg" width="358px" height="578px" alt="">
+                <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">Barbershop</h3>
                   </a>
                   <p class="gallery__article-intro">Сайт салона красоты. Для мужчин, да.</p>
                   <a class="gallery__article-price" href="">9 900</a>
                 </div>
-              </article>
+              </div>
             </li>
             <li class="gallery__item">
-              <article class="gallery__article">
-                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
-                <div class="gallery__article-content" hidden>
+              <div class="gallery__article">
+                <img class="gallery__article-img" src="img/catalog-mishka.jpg" width="358px" height="578px" alt="">
+                <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">Mishka</h3>
                   </a>
                   <p class="gallery__article-intro">Интернет-магазин вязаных игрушек</p>
                   <a class="gallery__article-price" href="">9 900</a>
                 </div>
-              </article>
+              </div>
             </li>
             <li class="gallery__item">
-              <article class="gallery__article">
-                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
-                <div class="gallery__article-content" hidden>
+              <div class="gallery__article">
+                <img class="gallery__article-img" src="img/catalog-aplus.jpg" width="358px" height="578px" alt="">
+                <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">A Plus</h3>
                   </a>
                   <p class="gallery__article-intro">Лендинг курсов повышения квалификации</p>
                   <a class="gallery__article-price" href="">9 900</a>
                 </div>
-              </article>
+              </div>
             </li>
             <li class="gallery__item">
-              <article class="gallery__article">
-                <img class="gallery__article-img" src="https://via.placeholder.com/150x100" alt="">
-                <div class="gallery__article-content" hidden>
+              <div class="gallery__article">
+                <img class="gallery__article-img" src="img/catalog-kvast.jpg" width="358px" height="578px" alt="">
+                <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">Кваст</h3>
                   </a>
                   <p class="gallery__article-intro">Промо-сайт производителя крафтового кваса</p>
                   <a class="gallery__article-price" href="">9 900</a>
                 </div>
-              </article>
+              </div>
             </li>
           </ul>
         </section>
         <ul class="gallery__pagination-list">
           <li>
-            <a class="gallery__pagination-item pagination-item-current">1</a>
+            <a class="gallery__pagination-item pagination-item--current">1</a>
           </li>
           <li>
             <a class="gallery__pagination-item" href="">2</a>
@@ -205,7 +210,7 @@
             <a class="gallery__pagination-item" href="">3</a>
           </li>
           <li>
-            <a class="gallery__pagination-item" href="">Следующая</a>
+            <a class="gallery__pagination-item pagination-item--long" href="">Следующая</a>
           </li>
         </ul>
       </div>
@@ -234,14 +239,17 @@
   <footer class="main-footer">
     <div class="wrapper">
       <div class="footer__social">
+        <span class="visually-hidden">Иконка социальной сети Вконтакте</span>
         <a class="footer__social-link" href="#">
-          <img class="footer__social-icons" src="https://via.placeholder.com/150x100" alt="Иконка Вконтакте">
+          <img class="footer__social-icons icon-vk" src="img/footer-icon-vk.svg" alt="Иконка Вконтакте">
         </a>
+        <span class="visually-hidden">Иконка социальной сети Facebook</span>
         <a class="footer__social-link" href="#">
-          <img class="footer__social-icons" src="https://via.placeholder.com/150x100" alt="Иконка Facebook">
+          <img class="footer__social-icons icon-fb" src="img/footer-icon-fb.svg" alt="Иконка Facebook">
         </a>
+        <span class="visually-hidden">Иконка социальной сети Instagram</span>
         <a class="footer__social-link" href="#">
-          <img class="footer__social-icons" src="https://via.placeholder.com/150x100" alt="Иконка Instagram">
+          <img class="footer__social-icons icon-inst" src="img/footer-icon-inst.svg" alt="Иконка Instagram">
         </a>
       </div>
       <div class="footer__social-content">
@@ -268,8 +276,10 @@
       <label for="user-text">Текст письма:</label>
       <textarea class="user-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
     </form>
-    <!-- можно ли использовать button?  -->
-    <button class="user-btn" type="button">Закрыть</button>
+    <button class="user-btn" type="input">Отправить</button>
+      <a class="user-btn-close" type="button">
+        <img src="/img/modal-close.svg" width="21px" height="21px" alt="Кпопка закрытия модального окна">
+      </a>
   </section>
 </body>
 
