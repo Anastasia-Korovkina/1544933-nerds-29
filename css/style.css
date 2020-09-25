@@ -315,6 +315,10 @@ button {
     max-width: 646px;
 }
 
+.about__table td {
+    width: 135px;
+}
+
 .about__list-title,
 .about__text {
     font-weight: 700;
