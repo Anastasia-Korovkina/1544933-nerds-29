@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header">
     <div class="wrapper">
       <div class="header__inner">
@@ -39,14 +39,14 @@
               </a>
             </li>
           </ul>
-          <ul class="main-nav__user-list">
-            <li class="main-nav__user-item">
-              <a class="main-nav__user-link" href="blank.html">
-                Корзина
-              </a>
-            </li>
-          </ul>
         </nav>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__user-item">
+            <a class="main-nav__user-link" href="blank.html">
+              Корзина
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -126,7 +126,8 @@
             </ul>
           </div>
           <div class="column-right">
-            <img class="about__img" src="/img/about-1.png" width="360px" heaight="208px" alt="Логотоп дизайн-студии Nёrds">
+            <img class="about__img" src="/img/about-1.png" width="360px" heaight="208px"
+              alt="Логотоп дизайн-студии Nёrds">
             <p class="about__text">
               с 2004 года любим точность во всем:
             </p>
@@ -161,16 +162,16 @@
             <a class="partners__item-link" href="#">
               <img class="partners__logo" src="img/partners-2.png" alt="Логотип компании barbershop Borodinsky">
             </a>
-            <div class="partners__item">
-              <a class="partners__item-link" href="#">
-                <img class="partners__logo" src="img/partners-3.png" alt="Логотип компании Pink">
-              </a>
-            </div>
-            <div class="partners__item">
-              <a class="partners__item-link" href="#">
-                <img class="partners__logo" src="img/partners-4.png" alt="Логотип компании Mishka">
-              </a>
-            </div>
+          </div>
+          <div class="partners__item">
+            <a class="partners__item-link" href="#">
+              <img class="partners__logo" src="img/partners-3.png" alt="Логотип компании Pink">
+            </a>
+          </div>
+          <div class="partners__item">
+            <a class="partners__item-link" href="#">
+              <img class="partners__logo" src="img/partners-4.png" alt="Логотип компании Mishka">
+            </a>
           </div>
         </div>
       </div>
@@ -198,27 +199,29 @@
   </main>
   <footer class="main-footer">
     <div class="wrapper">
-      <div class="footer__social">
-        <span class="visually-hidden">Иконка социальной сети Вконтакте</span>
-        <a class="footer__social-link" href="#">
-          <img class="footer__social-icons icon-vk" src="img/footer-icon-vk.svg" alt="Иконка Вконтакте">
-        </a>
-        <span class="visually-hidden">Иконка социальной сети Facebook</span>
-        <a class="footer__social-link" href="#">
-          <img class="footer__social-icons icon-fb" src="img/footer-icon-fb.svg" alt="Иконка Facebook">
-        </a>
-        <span class="visually-hidden">Иконка социальной сети Instagram</span>
-        <a class="footer__social-link" href="#">
-          <img class="footer__social-icons icon-inst" src="img/footer-icon-inst.svg" alt="Иконка Instagram">
-        </a>
-      </div>
-      <div class="footer__social-content">
-        <p class="footer__social-text">
-          Давайте дружить, это выгодно!
-        </p>
-        <p class="footer__social-desc">
-          Скидка 10% для друзей из социальных сетей.
-        </p>
+      <div class="footer__inner">
+        <div class="footer__social">
+          <span class="visually-hidden">Иконка социальной сети Вконтакте</span>
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-icons icon-vk" src="img/footer-icon-vk.svg" alt="Иконка Вконтакте">
+          </a>
+          <span class="visually-hidden">Иконка социальной сети Facebook</span>
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-icons icon-fb" src="img/footer-icon-fb.svg" alt="Иконка Facebook">
+          </a>
+          <span class="visually-hidden">Иконка социальной сети Instagram</span>
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-icons icon-inst" src="img/footer-icon-inst.svg" alt="Иконка Instagram">
+          </a>
+        </div>
+        <div class="footer__social-content">
+          <p class="footer__social-text">
+            Давайте дружить, это выгодно!
+          </p>
+          <p class="footer__social-desc">
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </div>
       </div>
     </div>
   </footer>
@@ -237,9 +240,9 @@
       <textarea class="user-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
     </form>
     <button class="user-btn" type="input">Отправить</button>
-      <a class="user-btn-close" href="">
-        <img src="/img/modal-close.svg" width="21px" height="21px" alt="Кпопка закрытия модального окна">
-      </a>
+    <a class="user-btn-close" href="">
+      <img src="/img/modal-close.svg" width="21px" height="21px" alt="Кпопка закрытия модального окна">
+    </a>
   </section>
 </body>
 
