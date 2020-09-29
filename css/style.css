@@ -76,7 +76,9 @@ fieldset {
 }
 
 button {
-    border: none;
+    outline: none;
+    border: 0;
+    padding: 0;
     display: inline-block;
 }
 
@@ -499,6 +501,11 @@ td:last-child {
     background-size: cover;
     height: 416px;
 }
+
+img .footer__social-icons{
+    color: rgba(255, 255, 255, 0.3);
+}
+
 /* Contacts end */
 
 /* Footer start */

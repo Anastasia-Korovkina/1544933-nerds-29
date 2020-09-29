@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Каталог — HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -114,10 +114,10 @@
           </ul>
           <ul class="filter-sort__controls">
             <li class="filter-sort__control">
-              <a class="filter-sort__link control-down control--active" href=""></a>
+              <a class="filter-sort__link control-down control--active" href="">По убыванию</a>
             </li>
             <li class="filter-sort__control">
-              <a class="gallery__link control-up" href=""></a>
+              <a class="gallery__link control-up" href="">По возрастанию</a>
             </li>
           </ul>
         </div>
@@ -126,7 +126,7 @@
           <ul class="gallery__list">
             <li class="gallery__item">
               <div class="gallery__article">
-                <img class="gallery__article-img" src="img/catalog-sedona.jpg" width="358px" height="578px" alt="">
+                <img class="gallery__article-img" src="img/sedona.jpg" width="358px" height="578px" alt="">
                 <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">Sedona</h3>
@@ -138,7 +138,7 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__article">
-                <img class="gallery__article-img" src="img/catalog-pink.jpg" width="358px" height="578px" alt="">
+                <img class="gallery__article-img" src="img/pink.jpg" width="358px" height="578px" alt="">
                 <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">Pink App</h3>
@@ -151,7 +151,7 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__article">
-                <img class="gallery__article-img" src="img/catalog-barbershop.jpg" width="358px" height="578px" alt="">
+                <img class="gallery__article-img" src="img/barbershop.jpg" width="358px" height="578px" alt="">
                 <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">Barbershop</h3>
@@ -163,7 +163,7 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__article">
-                <img class="gallery__article-img" src="img/catalog-mishka.jpg" width="358px" height="578px" alt="">
+                <img class="gallery__article-img" src="img/mishka.jpg" width="358px" height="578px" alt="">
                 <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">Mishka</h3>
@@ -175,7 +175,7 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__article">
-                <img class="gallery__article-img" src="img/catalog-aplus.jpg" width="358px" height="578px" alt="">
+                <img class="gallery__article-img" src="img/aplus.jpg" width="358px" height="578px" alt="">
                 <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">A Plus</h3>
@@ -187,7 +187,7 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__article">
-                <img class="gallery__article-img" src="img/catalog-kvast.jpg" width="358px" height="578px" alt="">
+                <img class="gallery__article-img" src="img/kvast.jpg" width="358px" height="578px" alt="">
                 <div class="gallery__article-content">
                   <a class="gallery__article-link" href="">
                     <h3 class="gallery__article-title">Кваст</h3>
@@ -239,20 +239,6 @@
   <footer class="main-footer">
     <div class="wrapper">
       <div class="footer__inner">
-        <div class="footer__social">
-          <span class="visually-hidden">Иконка социальной сети Вконтакте</span>
-          <a class="footer__social-link" href="#">
-            <img class="footer__social-icons icon-vk" src="img/footer-icon-vk.svg" alt="Иконка Вконтакте">
-          </a>
-          <span class="visually-hidden">Иконка социальной сети Facebook</span>
-          <a class="footer__social-link" href="#">
-            <img class="footer__social-icons icon-fb" src="img/footer-icon-fb.svg" alt="Иконка Facebook">
-          </a>
-          <span class="visually-hidden">Иконка социальной сети Instagram</span>
-          <a class="footer__social-link" href="#">
-            <img class="footer__social-icons icon-inst" src="img/footer-icon-inst.svg" alt="Иконка Instagram">
-          </a>
-        </div>
         <div class="footer__social-content">
           <p class="footer__social-text">
             Давайте дружить, это выгодно!
@@ -260,6 +246,20 @@
           <p class="footer__social-desc">
             Скидка 10% для друзей из социальных сетей.
           </p>
+        </div>
+        <div class="footer__social">
+          <span class="visually-hidden">Вконтакте компании Nerds</span>
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-icons icon-vk" src="img/footer-icon-vk.svg" alt="Вконтакте">
+          </a>
+          <span class="visually-hidden">Facebook компании Nerds</span>
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-icons icon-fb" src="img/footer-icon-fb.svg" alt="Facebook">
+          </a>
+          <span class="visually-hidden">Instagram-страницы компании Nerds</span>
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-icons icon-inst" src="img/footer-icon-inst.svg" alt="Instagram">
+          </a>
         </div>
       </div>
     </div>
@@ -277,11 +277,11 @@
       </p>
       <label for="user-text">Текст письма:</label>
       <textarea class="user-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+      <button class="user-btn" type="sudmit">Отправить</button>
     </form>
-    <button class="user-btn" type="input">Отправить</button>
-      <a class="user-btn-close" type="button">
-        <img src="/img/modal-close.svg" width="21px" height="21px" alt="Кпопка закрытия модального окна">
-      </a>
+    <a class="user-btn-close" href="">
+      <img src="img/modal-close.svg" width="21px" height="21px" alt="Кпопка закрытия модального окна">
+    </a>
   </section>
 </body>
 
