@@ -1,6 +1,3 @@
-/* Вопросы */
-/* А модальное окно должно быть во врапере? */
-
 * {
     box-sizing: border-box;
 }
@@ -108,7 +105,7 @@ button {
 }
 
 .filter-show__btn:hover,
-.gallery__pagination-item:hover {
+.gallery__pagination-link:hover {
     background-color: #dfdfdf;
     border-color: #dfdfdf;
 }
@@ -117,7 +114,7 @@ button {
 .services__item-link:focus,
 .contacts__link:focus,
 .filter-show__btn:focus,
-.gallery__pagination-item:focus,
+.gallery__pagination-link:focus,
 .user-btn:hover:focus,
 .footer__social-link:focus {
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -126,7 +123,7 @@ button {
 }
 
 .filter-show__btn:focus,
-.gallery__pagination-item:focus {
+.gallery__pagination-link:focus {
     background-color: #d5d5d5;
     border-color: #d5d5d5;
 }
@@ -195,6 +192,19 @@ button {
     grid-template-columns: min-content 1fr min-content;
 }
 
+.services__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    margin-right: 60px;
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 49px;
+}
+
 .partners__items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -203,12 +213,19 @@ button {
 
 .footer__inner {
     display: grid;
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: 1fr 3fr;
+}
+
+.catalog-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .gallery__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 41px;
+    row-gap: 30px;
 }
 
 .filter-sort {
@@ -230,22 +247,22 @@ button {
     padding-right: 45px;
 }
 
-.services__items {
+.about__table td {
     display: flex;
-    margin-right: 100px;
+    flex-direction: row;
 }
 
-.services__item {
-    margin-right: 100px;
+.about__table tr {
+    display: flex;
+    flex-direction: row;
+}
+.about__table sup{
+    top: 25px;
 }
 
-.about__content {
+.footer__inner {
     display: flex;
-    justify-content: space-between;
-}
-
-.catalog-content {
-    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 
@@ -260,9 +277,15 @@ button {
     margin-left: 26px;
 }
 
-.gallery__pagination-list{
+.gallery__pagination-list {
     display: flex;
 }
+
+.gallery__pagination-link {
+    margin-right: 11px;
+}
+
+
 
 /* ==================================== Index ==================================== */
 
@@ -502,7 +525,7 @@ td:last-child {
     height: 416px;
 }
 
-img .footer__social-icons{
+img .footer__social-icons {
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -674,19 +697,21 @@ legend,
     text-transform: uppercase;
 }
 
-.gallery__pagination-item {
+.gallery__pagination-link {
     text-align: center;
     padding: 17px 20px 15px 20px;
-    border: 3px solid #dbdbdb;
     border-radius: 3px;
     background-color: #dbdbdb;
+    height: 50px;
+    min-width: 50px;
 }
 
-.pagination-item--current {
+.pagination-link--current {
     background-color: transparent;
+    border: 3px solid #DBDBDB;
 }
 
-.pagination-item--long {
+.pagination-link--long {
     padding: 17px 77px 15px 78px;
 }
 /* Gallary end */
