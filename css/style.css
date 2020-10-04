@@ -64,10 +64,6 @@ img {
     height: auto;
 }
 
-/* p {
-    margin: 0;
-} */
-
 fieldset {
     border: none;
 }
@@ -284,7 +280,6 @@ button {
 .gallery__pagination-link {
     margin-right: 11px;
 }
-
 
 
 /* ==================================== Index ==================================== */
@@ -661,7 +656,6 @@ legend,
 .gallery__article {
     width: 358px;
     height: 618px;
-    /* Перевела цвет --basic-dark-grey в rba, чтобы сделать прозрачный фон  */
     background-color: rgba(77, 77, 77, 0.12);
     position: relative;
 }
