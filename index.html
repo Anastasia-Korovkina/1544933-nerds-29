@@ -226,23 +226,25 @@
     </div>
   </footer>
   <section class="modal">
-    <h2 class="modal_title">Напишите нам</h2>
-    <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="user-name">Ваше имя:</label>
-        <input class="user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="user-email">Ваш email:</label>
-        <input class="user-email" id="user-email" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <label for="user-text">Текст письма:</label>
-      <textarea class="user-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
-      <button class="user-btn" type="sudmit">Отправить</button>
-    </form>
-    <a class="user-btn-close" href="">
+    <h2 class="modal__title">Напишите нам</h2>
+    <a class="modal__user-btn--close" href="">
       <img src="img/modal-close.svg" width="21px" height="21px" alt="Кпопка закрытия модального окна">
     </a>
+    <form class="modal__user-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal__item">
+        <label for="modal__user-name">Ваше имя:</label>
+        <input class="modal__user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+      </div>
+      <div class="modal__item">
+        <label for="modal__user-email">Ваш email:</label>
+        <input class="modal__user-email" id="user-email" type="email" name="email" placeholder="email@example.com">
+      </div>
+      <div class="modal__item">
+      <label for="modal__user-text">Текст письма:</label>
+      <textarea class="modal__user-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="modal__user-btn" type="sudmit">Отправить</button>
+    </form>
   </section>
 </body>
 
