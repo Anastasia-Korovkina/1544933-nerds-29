@@ -56,31 +56,36 @@
     <section class="features">
       <div class="wrapper">
         <h2 class="visually-hidden">Преимущества компании</h2>
-        <div class="features__slider">
-          <div class="features__slide slide-1">
-            <h3 class="features__slide-title">Долго, дорого, скрупулезно.</h3>
-            <p class="features__slide-intro">
+        <input class="features__input" type="radio" name="features" id="feature-1" checked>
+        <input class="features__input" type="radio" name="features" id="feature-2">
+        <input class="features__input" type="radio" name="features" id="feature-3">
+        <div class="features__list">
+          <div class="features__item slide-1">
+            <h3 class="features__item-title">Долго, дорого, скрупулезно.</h3>
+            <p class="features__item-intro">
               Математически выверенный дизайн для вашего сайта или мобильного приложения.
             </p>
-            <a class="features__slide-link" href="">Узнать больше</a>
+            <a class="features__item-link" href="">Узнать больше</a>
           </div>
-          <!-- <div class="features__slide slide-2">
-            <h3 class="features__slide-title">Любим математику как никто другой</h3>
-            <p class="features__slide-intro">
+          <div class="features__item slide-2">
+            <h3 class="features__item-title">Любим математику как никто другой</h3>
+            <p class="features__item-intro">
               Никакого креатива, только математические формулы для расчета идеальных пропорций
             </p>
-            <a class="features__slide-link" href="">Узнать больше</a>
+            <a class="features__item-link" href="">Узнать больше</a>
           </div>
-          <div class="features__slide slide-3">
-            <h3 class="features__slide-title">Только ночь, только хардкор</h3>
-            <p class="features__slide-intro">
+          <div class="features__item slide-3">
+            <h3 class="features__item-title">Только ночь, только хардкор</h3>
+            <p class="features__item-intro">
               Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
             </p>
-            <a class="features__slide-link" href="">Узнать больше</a>
-          </div> -->
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
+            <a class="features__item-link" href="">Узнать больше</a>
+          </div>
+        </div>
+        <div class="features__togglers">
+          <label class="features__toggler" for="feature-1">1</label>
+          <label class="features__toggler" for="feature-2">2</label>
+          <label class="features__toggler" for="feature-3">3</label>
         </div>
       </div>
     </section>
@@ -154,27 +159,27 @@
         <h2 class="visually-hidden">Партнёры компании</h2>
         <div class="partners__items">
           <div class="partners__item">
+            <span class="visually-hidden">Логотип компании html academy</span>
             <a class="partners__item-link" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img class="partners__logo" src="img/logo-htmlacademy.svg" width="199px" height="68px"
-                alt="Логотип компании html academy">
+              <img class="partners__logo" src="img/logo-htmlacademy.svg" width="199px" height="68px" alt="">
             </a>
           </div>
           <div class="partners__item">
+            <span class="visually-hidden">Логотип компании barbershop Borodinsky</span>
             <a class="partners__item-link" href="#">
-              <img class="partners__logo" src="img/logo-barbershop.svg" width="209px" height="90px"
-                alt="Логотип компании barbershop Borodinsky">
+              <img class="partners__logo" src="img/logo-barbershop.svg" width="209px" height="90px" alt="">
             </a>
           </div>
           <div class="partners__item">
+            <span class="visually-hidden">Логотип компании Pink</span>
             <a class="partners__item-link" href="#">
-              <img class="partners__logo" src="img/logo-pink.svg" width="185px" height="52px"
-                alt="Логотип компании Pink">
+              <img class="partners__logo" src="img/logo-pink.svg" width="185px" height="52px" alt="">
             </a>
           </div>
           <div class="partners__item">
+            <span class="visually-hidden">Логотип компании Mishka</span>
             <a class="partners__item-link" href="#">
-              <img class="partners__logo" src="img/logo-mishka.svg" width="173px" height="84px"
-                alt="Логотип компании Mishka">
+              <img class="partners__logo" src="img/logo-mishka.svg" width="173px" height="84px" alt="">
             </a>
           </div>
         </div>
@@ -198,7 +203,8 @@
           </a>
         </div>
       </div>
-      <div class="footer__map"></div>
+      <div class="footer__map">
+      </div>
     </section>
   </main>
   <footer class="main-footer">

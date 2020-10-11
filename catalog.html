@@ -59,7 +59,6 @@
         </h1>
       </div>
     </div>
-    <!-- Недоделанная форма фильтра шаблонов в каталоге -->
     <div class="wrapper catalog-content">
       <div class="column-left">
         <form class="filter-show" method="get" action="https://echo.htmlacademy.ru">
@@ -86,17 +85,17 @@
           <fieldset class="filter-show__fieldset">
             <legend class="filter-show__legend">Сетка:</legend>
             <label class="filter-show__label-radio">
-              <input class="filter-show__radio" type="radio" checked>
+              <input class="filter-show__radio" type="radio"  name="grid" checked>
               <span class="filter-show__radio-input"></span>
               <span class="filter-show__radio-text">Адаптивный</span>
             </label>
             <label class="filter-show__label-radio">
-              <input class="filter-show__radio" type="radio">
+              <input class="filter-show__radio" type="radio" name="grid">
               <span class="filter-show__radio-input"></span>
               <span class="filter-show__radio-text">Фиксированная</span>
             </label>
             <label class="filter-show__label-radio">
-              <input class="filter-show__radio" type="radio">
+              <input class="filter-show__radio" type="radio" name="grid">
               <span class="filter-show__radio-input"></span>
               <span class="filter-show__radio-text">Резиновая</span>
             </label>
@@ -156,12 +155,12 @@
           <ul class="filter-sort__controls">
             <li class="filter-sort__control">
               <a class="filter-sort__link control-down control--active" href="">
-                <!-- По убыванию -->
+                <span class="visually-hidden">По убыванию</span>
               </a>
             </li>
             <li class="filter-sort__control">
               <a class="gallery__link control-up" href="">
-                <!-- По возрастанию -->
+                <span class="visually-hidden"> По возрастанию</span>
               </a>
             </li>
           </ul>
@@ -170,83 +169,83 @@
           <h2 class="visually-hidden">Список шаблонов</h2>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <div class="gallery__article">
-                <img class="gallery__article-img" src="img/sedona.jpg" width="358px" height="578px" alt="">
-                <div class="gallery__article-content">
-                  <a class="gallery__article-link" href="">
-                    <h3 class="gallery__article-title">Sedona</h3>
+              <article class="product-card">
+                <img class="product-card__img" src="img/sedona.jpg" width="358px" height="578px" alt="">
+                <div class="product-card__content">
+                  <a class="product-card__link" href="">
+                    <h3 class="product-card__title">Sedona</h3>
                   </a>
-                  <p class="gallery__article-intro">Информационный сайт для туристов</p>
-                  <a class="gallery__article-price" href="">9 900 руб.</a>
+                  <p class="product-card__intro">Информационный сайт для&nbsp;туристов</p>
+                  <a class="product-card__price" href="">9 900 руб.</a>
                 </div>
-              </div>
+              </article>
             </li>
             <li class="gallery__item">
-              <div class="gallery__article">
-                <img class="gallery__article-img" src="img/pink.jpg" width="358px" height="578px" alt="">
-                <div class="gallery__article-content">
-                  <a class="gallery__article-link" href="">
-                    <h3 class="gallery__article-title">Pink App</h3>
+              <article class="product-card">
+                <img class="product-card__img" src="img/pink.jpg" width="358px" height="578px" alt="">
+                <div class="product-card__content">
+                  <a class="product-card__link" href="">
+                    <h3 class="product-card__title">Pink App</h3>
                   </a>
-                  <p class="gallery__article-intro">Продуктовый лендинг приложения для iOS и Android
+                  <p class="product-card__intro">Продуктовый лендинг приложения для&nbsp;iOS и Android
                   </p>
-                  <a class="gallery__article-price" href="">9 900 руб.</a>
+                  <a class="product-card__price" href="">9 900 руб.</a>
                 </div>
-              </div>
+              </article>
             </li>
             <li class="gallery__item">
-              <div class="gallery__article">
-                <img class="gallery__article-img" src="img/barbershop.jpg" width="358px" height="578px" alt="">
-                <div class="gallery__article-content">
-                  <a class="gallery__article-link" href="">
-                    <h3 class="gallery__article-title">Barbershop</h3>
+              <article class="product-card">
+                <img class="product-card__img" src="img/barbershop.jpg" width="358px" height="578px" alt="">
+                <div class="product-card__content">
+                  <a class="product-card__link" href="">
+                    <h3 class="product-card__title">Barbershop</h3>
                   </a>
-                  <p class="gallery__article-intro">Сайт салона красоты. Для мужчин, да.</p>
-                  <a class="gallery__article-price" href="">9 900 руб.</a>
+                  <p class="product-card__intro">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
+                  <a class="product-card__price" href="">9 900 руб.</a>
                 </div>
-              </div>
+              </article>
             </li>
             <li class="gallery__item">
-              <div class="gallery__article">
-                <img class="gallery__article-img" src="img/mishka.jpg" width="358px" height="578px" alt="">
-                <div class="gallery__article-content">
-                  <a class="gallery__article-link" href="">
-                    <h3 class="gallery__article-title">Mishka</h3>
+              <article class="product-card">
+                <img class="product-card__img" src="img/mishka.jpg" width="358px" height="578px" alt="">
+                <div class="product-card__content">
+                  <a class="product-card__link" href="">
+                    <h3 class="product-card__title">Mishka</h3>
                   </a>
-                  <p class="gallery__article-intro">Интернет-магазин вязаных игрушек</p>
-                  <a class="gallery__article-price" href="">9 900 руб.</a>
+                  <p class="product-card__intro">Интернет-магазин вязаных&nbsp;игрушек</p>
+                  <a class="product-card__price" href="">9 900 руб.</a>
                 </div>
-              </div>
+              </article>
             </li>
             <li class="gallery__item">
-              <div class="gallery__article">
-                <img class="gallery__article-img" src="img/aplus.jpg" width="358px" height="578px" alt="">
-                <div class="gallery__article-content">
-                  <a class="gallery__article-link" href="">
-                    <h3 class="gallery__article-title">A Plus</h3>
+              <article class="product-card">
+                <img class="product-card__img" src="img/aplus.jpg" width="358px" height="578px" alt="">
+                <div class="product-card__content">
+                  <a class="product-card__link" href="">
+                    <h3 class="product-card__title">A Plus</h3>
                   </a>
-                  <p class="gallery__article-intro">Лендинг курсов повышения квалификации</p>
-                  <a class="gallery__article-price" href="">9 900 руб.</a>
+                  <p class="product-card__intro">Лендинг курсов повышения квалификации</p>
+                  <a class="product-card__price" href="">9 900 руб.</a>
                 </div>
-              </div>
+              </article>
             </li>
             <li class="gallery__item">
-              <div class="gallery__article">
-                <img class="gallery__article-img" src="img/kvast.jpg" width="358px" height="578px" alt="">
-                <div class="gallery__article-content">
-                  <a class="gallery__article-link" href="">
-                    <h3 class="gallery__article-title">Кваст</h3>
+              <article class="product-card">
+                <img class="product-card__img" src="img/kvast.jpg" width="358px" height="578px" alt="">
+                <div class="product-card__content">
+                  <a class="product-card__link" href="">
+                    <h3 class="product-card__title">Кваст</h3>
                   </a>
-                  <p class="gallery__article-intro">Промо-сайт производителя крафтового кваса</p>
-                  <a class="gallery__article-price" href="">9 900 руб.</a>
+                  <p class="product-card__intro">Промо-сайт производителя крафтового кваса</p>
+                  <a class="product-card__price" href="">9 900 руб.</a>
                 </div>
-              </div>
+              </article>
             </li>
           </ul>
         </section>
         <ul class="gallery__pagination-list">
-          <li class="gallery__pagination-item pagination-item--current">
-            <a class="gallery__pagination-link">1</a>
+          <li class="gallery__pagination-item">
+            <a class="gallery__pagination-link  pagination-link--current">1</a>
           </li>
           <li class="gallery__pagination-item">
             <a class="gallery__pagination-link" href="">2</a>
