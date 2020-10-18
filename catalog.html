@@ -13,7 +13,7 @@
   <header class="main-header">
     <div class="wrapper">
       <div class="header__inner">
-        <a class="header__logo-link" href="#">
+        <a class="header__logo-link" href="index.html">
           <img class="header__logo-img" src="img/logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerd's»">
         </a>
         <nav class="main-nav">
@@ -60,7 +60,7 @@
       </div>
     </div>
     <div class="wrapper catalog-content">
-      <div class="column-left">
+      <div class="filter__column-left">
         <form class="filter-show" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-show__fieldset">
             <legend>Стоимость:</legend>
@@ -82,7 +82,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="filter-show__fieldset">
+          <fieldset class="filter-show__fieldset-radio">
             <legend class="filter-show__legend">Сетка:</legend>
             <label class="filter-show__label-radio">
               <input class="filter-show__radio" type="radio"  name="grid" checked>
@@ -100,7 +100,7 @@
               <span class="filter-show__radio-text">Резиновая</span>
             </label>
           </fieldset>
-          <fieldset class="filter-show__fieldset">
+          <fieldset class="filter-show__fieldset-checkbox">
             <legend class="filter-show__legend">Особенности:</legend>
 
             <label class="filter-show__label-checkbox">
@@ -132,7 +132,7 @@
           <button class="filter-show__btn" type="submit">Показать</button>
         </form>
       </div>
-      <div class="column-right">
+      <div class="filter__column-right">
         <div class="filter-sort">
           <p class="filter-sort__legend">Сортировать:</p>
           <ul class="filter-sort__list">
@@ -170,7 +170,7 @@
           <ul class="gallery__list">
             <li class="gallery__item">
               <article class="product-card">
-                <img class="product-card__img" src="img/sedona.jpg" width="358px" height="578px" alt="">
+                <img class="product-card__img" src="img/sedona.jpg" width="358" height="578" alt="">
                 <div class="product-card__content">
                   <a class="product-card__link" href="">
                     <h3 class="product-card__title">Sedona</h3>
@@ -182,7 +182,7 @@
             </li>
             <li class="gallery__item">
               <article class="product-card">
-                <img class="product-card__img" src="img/pink.jpg" width="358px" height="578px" alt="">
+                <img class="product-card__img" src="img/pink.jpg" width="358" height="578" alt="">
                 <div class="product-card__content">
                   <a class="product-card__link" href="">
                     <h3 class="product-card__title">Pink App</h3>
@@ -195,7 +195,7 @@
             </li>
             <li class="gallery__item">
               <article class="product-card">
-                <img class="product-card__img" src="img/barbershop.jpg" width="358px" height="578px" alt="">
+                <img class="product-card__img" src="img/barbershop.jpg" width="358" height="578" alt="">
                 <div class="product-card__content">
                   <a class="product-card__link" href="">
                     <h3 class="product-card__title">Barbershop</h3>
@@ -207,7 +207,7 @@
             </li>
             <li class="gallery__item">
               <article class="product-card">
-                <img class="product-card__img" src="img/mishka.jpg" width="358px" height="578px" alt="">
+                <img class="product-card__img" src="img/mishka.jpg" width="358" height="578" alt="">
                 <div class="product-card__content">
                   <a class="product-card__link" href="">
                     <h3 class="product-card__title">Mishka</h3>
@@ -219,7 +219,7 @@
             </li>
             <li class="gallery__item">
               <article class="product-card">
-                <img class="product-card__img" src="img/aplus.jpg" width="358px" height="578px" alt="">
+                <img class="product-card__img" src="img/aplus.jpg" width="358" height="578" alt="">
                 <div class="product-card__content">
                   <a class="product-card__link" href="">
                     <h3 class="product-card__title">A Plus</h3>
@@ -231,7 +231,7 @@
             </li>
             <li class="gallery__item">
               <article class="product-card">
-                <img class="product-card__img" src="img/kvast.jpg" width="358px" height="578px" alt="">
+                <img class="product-card__img" src="img/kvast.jpg" width="358" height="578" alt="">
                 <div class="product-card__content">
                   <a class="product-card__link" href="">
                     <h3 class="product-card__title">Кваст</h3>
@@ -272,7 +272,7 @@
             <br />
             тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
           </p>
-          <a class="contacts__link" href="">
+          <a class="contacts__link modal-link" href="">
             Напишите нам
           </a>
         </div>
@@ -326,27 +326,29 @@
       </div>
     </div>
   </footer>
-  <section class="modal">
+  <section class="modal modal-popup">
     <h2 class="modal__title">Напишите нам</h2>
-    <a class="modal__user-btn--close" href="">
-      <img src="img/modal-close.svg" width="21px" height="21px" alt="Кпопка закрытия модального окна">
+    <a class="modal__user-btn--close modal-close" href="">
+      <img src="img/modal-close.svg" width="21" height="21" alt="Кпопка закрытия модального окна">
     </a>
     <form class="modal__user-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal__item">
         <label for="modal__user-name">Ваше имя:</label>
-        <input class="modal__user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        <input class="modal__user-name" id="modal__user-name" type="text" name="name" placeholder="Имя Фамилия">
       </div>
       <div class="modal__item">
         <label for="modal__user-email">Ваш email:</label>
-        <input class="modal__user-email" id="user-email" type="email" name="email" placeholder="email@example.com">
+        <input class="modal__user-email" id="modal__user-email" type="email" name="email" placeholder="email@example.com">
       </div>
       <div class="modal__item">
         <label for="modal__user-text">Текст письма:</label>
-        <textarea class="modal__user-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+        <textarea class="modal__user-text" id="modal__user-text" name="text" placeholder="В свободной форме"></textarea>
       </div>
-      <button class="modal__user-btn" type="sudmit">Отправить</button>
+      <button class="modal__user-btn" type="submit">Отправить</button>
     </form>
   </section>
+
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
