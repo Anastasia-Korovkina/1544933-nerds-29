@@ -363,8 +363,8 @@ img {
     margin-right: 17px;
 }
 
-.features__toggler:focus {
-    outline: none;
+.features__toggler:focus{
+    outline: 2px solid #0674D0;
 }
 
 .features__toggler:last-child {
