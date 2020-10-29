@@ -1,5 +1,5 @@
 const modalLink = document.querySelector(".modal-link");
-const modalPopup = document.querySelector(".modal-popup");
+const modalPopup = document.querySelector(".modal");
 const modalClose = modalPopup.querySelector(".modal-close");
 const modalForm = modalPopup.querySelector(".modal__user-form");
 const modalName = modalPopup.querySelector(".modal__user-name");
@@ -38,7 +38,9 @@ modalForm.addEventListener("submit", function (evt) {
   if (!modalName.value || !modalEmail.value) {
     evt.preventDefault();
     modalPopup.classList.add("modal-error");
-    evt.preventDefault();
+    setTimeout(function(){
+      modalPopup.classList.remove("modal-error");
+    }, 0.6 * 1000);
   } else {
     if (isStorageSupport) {
       localStorage.setItem("text", modalName.value);
