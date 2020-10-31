@@ -11,13 +11,13 @@
     --special: #fb565a;
 }
 .visually-hidden {
-    position: absolute !important;
+    position: absolute;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
     overflow: hidden;
 }
 
@@ -49,6 +49,7 @@ img {
     border: 0px;
     padding: 0px;
     display: inline-block;
+    vertical-align: middle;
     background-color: transparent;
 }
 
@@ -109,6 +110,7 @@ img {
 
 .features__item-link {
     display: inline-block;
+    vertical-align: middle;
     margin: 0px;
     list-style: none;
     padding: 0px 55px;
@@ -170,6 +172,7 @@ img {
 
 .header__logo-link {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .header__logo-link:focus path {
@@ -254,6 +257,7 @@ img {
 
 .main-nav__site-link {
     display: inline-block;
+    vertical-align: middle;
     padding: 16px 0px 13px;
 }
 
@@ -427,6 +431,7 @@ img {
 
 .services__item-link {
     display: inline-block;
+    vertical-align: middle;
     padding: 0px 40px;
     line-height: 51px;
 }
@@ -586,6 +591,7 @@ tbody {
 
 .partners__item-link {
     display: inline-block;
+    vertical-align: middle;
     opacity: 0.2;
 }
 
@@ -677,6 +683,7 @@ tbody {
 
 .contacts__link {
     display: inline-block;
+    vertical-align: middle;
     padding: 0px 40px;
     line-height: 51px;
     box-sizing: border-box;
@@ -799,7 +806,7 @@ tbody {
 
 .filter-show__range-field {
     width: 260px;
-    margin-top: 48px;
+    margin-top: 37px;
 }
 
 .filter-show__scale {
@@ -941,6 +948,7 @@ tbody {
 
 .filter-show__btn {
     display: inline-block;
+    vertical-align: middle;
     color: var(--basic-black);
     font-weight: 700;
     padding: 0px 87px;
@@ -988,7 +996,7 @@ tbody {
     margin-left: 10px;
 }
 
-legend,
+.filter-show__legend,
 .filter-sort__legend {
     color: var(--basic-black);
     font-weight: 700;
@@ -1088,6 +1096,7 @@ legend,
 
 .gallery__link {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .gallery__pagination-list {
@@ -1207,6 +1216,7 @@ legend,
 
 .product-card__price {
     display: inline-block;
+    vertical-align: middle;
     padding: 0px 60px;
     line-height: 50px;
 }
@@ -1304,6 +1314,7 @@ legend,
 
 .modal__user-btn--close {
     display: inline-block;
+    vertical-align: middle;
     opacity: 0.3;
 }
 
