@@ -176,8 +176,8 @@ img {
 }
 
 .header__logo-link:focus path {
-    fill: #A6A6A6;
-    transition: all .3s;
+    fill: #a6a6a6;
+    transition: all 0.3s;
 }
 /* Header end */
 
@@ -367,8 +367,8 @@ img {
     margin-right: 17px;
 }
 
-.features__toggler:focus{
-    outline: 2px solid #0674D0;
+.features__toggler:focus {
+    outline: 2px solid #0674d0;
 }
 
 .features__toggler:last-child {
@@ -912,6 +912,14 @@ tbody {
     transition: 0.3s;
 }
 
+.filter-show__radio:disabled + .filter-show__radio-input::before {
+    opacity: 0.1;
+}
+
+.filter-show__radio:checked:disabled + .filter-show__radio-input::before {
+    opacity: 0.1;
+}
+
 /* Checkbox form */
 .filter-show__label-checkbox {
     display: flex;
@@ -944,6 +952,14 @@ tbody {
 .filter-show__checkbox:checked + .filter-show__checkbox-input::before {
     background: url(../img/checkbox-on.svg) 0 0 no-repeat;
     transition: 0.3s;
+}
+
+.filter-show__checkbox:disabled + .filter-show__checkbox-input::before {
+    opacity: 0.1;
+}
+
+.filter-show__checkbox:checked:disabled + .filter-show__checkbox-input::before {
+    opacity: 0.1;
 }
 
 .filter-show__btn {
@@ -1325,6 +1341,12 @@ tbody {
 
 .modal__user-btn--close:focus {
     opacity: 0.1;
+}
+
+.modal__user-name:invalid,
+.modal__user-email:invalid {
+    border-color: #E74246;
+    color: #E74246;
 }
 /* Modal end */
 
